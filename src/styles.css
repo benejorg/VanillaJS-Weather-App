@@ -1,0 +1,37 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #34495e;
+}
+
+.rounded-corners {
+  border-radius: 2em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+#currentTemp {
+  font-weight: 400;
+}
+
+#celsius,
+#fahrenheit {
+  cursor: pointer;
+  color: #3498db;
+}
+
+#main-weather-icon {
+  font-size: 80px;
+  color: gold;
+}
+
+#currentPos {
+  color: #3498db;
+  cursor: pointer;
+}
