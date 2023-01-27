@@ -80,3 +80,84 @@ a:hover {
   color: #34495e;
   border: solid 1px grey;
 }
+
+.change-theme-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #34495e;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: white;
+  margin-top: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.change-theme-button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.dark body {
+  background: #242039;
+  color: white;
+}
+
+.dark a {
+  color: #c3cfe2;
+}
+
+.dark hr {
+  border: solid 1px #c3cfe2;
+}
+
+.dark .app {
+  background: #2a2b47 !important;
+}
+
+.dark #celsius,
+#fahrenheit {
+  color: #c3cfe2;
+}
+
+.dark .active {
+  color: white !important;
+}
+
+.dark #currentPos {
+  color: #c3cfe2;
+  cursor: pointer;
+}
+
+.dark .weekday {
+  color: white;
+}
+
+.dark #searchButton {
+  background-color: white;
+  color: #2a2b47;
+  border: solid 1px white;
+}
+
+.dark #searchButton:hover {
+  background-color: #c3cfe2;
+  color: #2a2b47;
+  border: solid 1px #c3cfe2;
+}
+
+.dark .change-theme-button {
+  border: 2px solid white;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #242039;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin-top: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.dark .change-theme-button:hover {
+  background-color: white;
+  color: #242039;
+}

@@ -164,3 +164,12 @@ function showStavanger(response) {
 }
 
 window.onload = showStavanger;
+
+// Dark theme button
+function darkTheme() {
+  let body = document.querySelector("html");
+  body.classList.toggle("dark");
+}
+
+let themeButton = document.querySelector(".change-theme-button");
+themeButton.addEventListener("click", darkTheme);
