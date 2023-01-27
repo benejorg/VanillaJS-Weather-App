@@ -70,11 +70,11 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row text-center mt-4">`;
+  let forecastHTML = `<div class="row text-center mt-4 justify-content-sm-between">`;
 
   forecast.forEach(function (forecastDay, index) {
     if (index < 5) {
-      forecastHTML += `<div class="col">
+      forecastHTML += `<div class="col-6 col-sm-2 my-3 my-0-sm">
     <p class="weekday">${formatDT(forecastDay.dt)}</p>
     <img
       src="http://openweathermap.org/img/wn/${
