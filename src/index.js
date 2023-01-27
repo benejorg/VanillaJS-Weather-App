@@ -29,11 +29,6 @@ let currentCity = document.querySelector("#cityName");
 let currentTemp = document.querySelector("#currentTemp");
 let search = document.querySelector("#searchField");
 let currentLocation = document.querySelector("#currentPos");
-let feelsLike = document.querySelector("#feels-like");
-let windSpeed = document.querySelector("#wind-speed");
-let humidity = document.querySelector("#humidity");
-let weatherDescription = document.querySelector("#weather-description");
-let weatherIcon = document.querySelector("#weather-icon");
 
 search.addEventListener("submit", changeCity);
 currentLocation.addEventListener("click", currentPosition);
@@ -49,11 +44,6 @@ function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   currentTemp.innerHTML = temperature;
   currentCity.innerHTML = response.data.name;
-  feelsLike.innerHTML = Math.round(response.data.main.feels_like);
-  weatherDescription.innerHTML = response.data.weather[0].main;
-  humidity.innerHTML = response.data.main.humidity;
-  windSpeed.innerHTML = Math.round(response.data.wind.speed);
-  weatherIcon.innerHTML = "http://openweathermap.org/img/wn/04d@2x.png";
 }
 
 function showPosition(position) {
