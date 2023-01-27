@@ -65,3 +65,18 @@ a:hover {
 .degrees #forecastTempMin {
   color: #aeb6bf;
 }
+
+#searchButton {
+  background-color: #34495e;
+  color: white;
+  border: solid 1px #34495e;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+#searchButton:hover {
+  background-color: white;
+  color: #34495e;
+  border: solid 1px grey;
+}
