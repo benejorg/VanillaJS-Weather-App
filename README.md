@@ -1,3 +1,5 @@
+Created with HTML, CSS, Bootstrap, vanilla JS and OpenWeatherMap API. 
+
 Check out the Live Demo here:
 https://clinquant-basbousa-aaa2c3.netlify.app/
 
