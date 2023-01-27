@@ -29,8 +29,8 @@ h2 {
   color: #3498db;
 }
 
-#main-weather-icon {
-  font-size: 80px;
+#weather-icon {
+  min-width: 6rem;
 }
 
 #currentPos {
