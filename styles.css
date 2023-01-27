@@ -1,0 +1,161 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #34495e;
+}
+
+.rounded-corners {
+  border-radius: 2em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 200;
+}
+
+#currentTemp {
+  font-weight: 400;
+}
+
+.tempUnit {
+  cursor: pointer;
+  color: #3498db;
+}
+
+.active {
+  color: #34495e !important;
+}
+
+#weather-icon {
+  min-width: 6rem;
+}
+
+#currentPos {
+  color: #3498db;
+  cursor: pointer;
+}
+
+a {
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.weekday {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #5d6d7e;
+}
+
+.degrees {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.degrees #forecastTempMin {
+  color: #aeb6bf;
+}
+
+#searchButton {
+  background-color: #34495e;
+  color: white;
+  border: solid 1px #34495e;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: all 250ms ease-in-out;
+}
+
+#searchButton:hover {
+  background-color: white;
+  color: #34495e;
+  border: solid 1px grey;
+}
+
+.change-theme-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #34495e;
+  border-radius: 15px;
+  border: 2px solid white;
+  background-color: white;
+  margin-top: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.change-theme-button:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.dark body {
+  background: #242039;
+  color: white;
+}
+
+.dark a {
+  color: #c3cfe2;
+}
+
+.dark hr {
+  border: solid 1px #c3cfe2;
+}
+
+.dark .app {
+  background: #2a2b47 !important;
+}
+
+.dark .tempUnit {
+  color: #c3cfe2;
+}
+
+.dark .active {
+  color: white !important;
+}
+
+.dark #currentPos {
+  color: #c3cfe2;
+  cursor: pointer;
+}
+
+.dark .weekday {
+  color: white;
+}
+
+.dark #searchButton {
+  background-color: white;
+  color: #2a2b47;
+  border: solid 1px white;
+}
+
+.dark #searchButton:hover {
+  background-color: #c3cfe2;
+  color: #2a2b47;
+  border: solid 1px #c3cfe2;
+}
+
+.dark .change-theme-button {
+  border: 2px solid white;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #242039;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  margin-top: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.dark .change-theme-button:hover {
+  background-color: white;
+  color: #242039;
+}
