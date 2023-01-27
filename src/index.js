@@ -1,26 +1,27 @@
-// Feature 1
-let now = new Date();
+function updateTime() {
+  let now = new Date();
 
-let day = now.getDay();
+  let day = now.getDay();
 
-let hours = now.getHours();
-let minutes = now.getMinutes();
-if (minutes < 10) {
-  minutes = `0${minutes}`;
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let time = document.querySelector("#time");
+  time.innerHTML = `${days[day]} ${hours}:${minutes}`;
 }
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let time = document.querySelector("#time");
-time.innerHTML = `${days[day]} ${hours}:${minutes}`;
+setInterval(updateTime, 1000);
 
 let apiKey = "0ebc654fccbc00189d5408f3d6f15b08";
 
