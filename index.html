@@ -47,18 +47,28 @@
         </div>
       </div>
     </div>
-    <div class="container bg-light shadow rounded-corners p-4">
-      <div class="row">
-        <div class="col-6 mx-auto text-center" id="time">Today's date</div>
+    <div class="container-sm bg-light shadow rounded-corners p-4">
+      <div class="row justify-content-center">
+        <div class="col-6 text-center" id="time">Today's date</div>
       </div>
-      <div class="row mt-4 mb-4 mx-auto">
-        <div class="col-2 offset-3 text-center">
-          <i class="bi bi-brightness-high-fill" id="main-weather-icon"></i>
+      <div class="row mt-4 justify-content-center m-3">
+        <div
+          class="col-3 text-center text-sm-end d-flex align-items-center justify-content-end"
+        >
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+            alt="Clouds"
+            id="weather-icon"
+            width="50%"
+            ;
+          />
         </div>
-        <div class="col-5 offset-2-right">
+        <div class="col-12 text-center text-sm-start col-sm-4 offset-2-right">
           <h1 id="cityName">Stavanger</h1>
+          <p id="weather-description">Clear sky</p>
           <h2>
-            <span id="currentTemp">4</span>° <span id="celsius">C</span> /
+            <span id="currentTemp">4</span>°
+            <span id="celsius" class="active">C</span> /
             <span id="fahrenheit">F</span>
           </h2>
           <p id="currentPos">
@@ -66,32 +76,24 @@
           </p>
         </div>
       </div>
-      <div class="row mx-auto text-center mb-4">
-        <div class="col">
-          Wed <br /><i class="bi bi-cloud-drizzle-fill weather-icon-small"
-            ><br /></i
-          >°C
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-12 col-sm-4 col-md-2">
+          Feels like: <span id="feels-like">2</span>°C
         </div>
-        <div class="col">
-          Wed <br /><i class="bi bi-cloud-drizzle-fill weather-icon-small"
-            ><br /></i
-          >°C
+        <div class="col-12 col-sm-4 col-md-2">
+          Wind: <span id="wind-speed">2</span> m/s
         </div>
-        <div class="col">
-          Wed <br /><i class="bi bi-cloud-drizzle-fill weather-icon-small"
-            ><br /></i
-          >°C
+        <div class="col-12 col-sm-4 col-md-2">
+          Humidity: <span id="humidity">98</span>%
         </div>
-        <div class="col">
-          Wed <br /><i class="bi bi-cloud-drizzle-fill weather-icon-small"
-            ><br /></i
-          >°C
-        </div>
-        <div class="col">
-          Wed <br /><i class="bi bi-cloud-drizzle-fill weather-icon-small"
-            ><br /></i
-          >°C
-        </div>
+      </div>
+      <hr />
+      <div class="row text-center mt-4">
+        <div class="col">Tue <br />🌧️<br />°C</div>
+        <div class="col">Wed <br />🌥️<br />°C</div>
+        <div class="col">Thu <br />☀️<br />°C</div>
+        <div class="col">Fri <br />🌤️<br />°C</div>
+        <div class="col">Sat <br />☁️<br />°C</div>
       </div>
     </div>
     <div class="container mt-4">

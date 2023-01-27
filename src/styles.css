@@ -23,12 +23,14 @@ h2 {
 #celsius,
 #fahrenheit {
   cursor: pointer;
+}
+
+.active {
   color: #3498db;
 }
 
 #main-weather-icon {
   font-size: 80px;
-  color: gold;
 }
 
 #currentPos {
